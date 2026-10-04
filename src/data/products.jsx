@@ -1,0 +1,242 @@
+// Mock product data for Kiyomi — a Japanese-inspired minimalist boutique
+// Shape matches what ProductDetailPage / useProduct(slug) and ShopPage / useProducts() expect.
+
+export const products = [
+  {
+    id: "p-001",
+    slug: "haru-linen-wrap-shirt",
+    name: "Haru Linen Wrap Shirt",
+    category: { name: "Tops", slug: "tops" },
+    priceCents: 8900,
+    salePriceCents: null,
+    currency: "USD",
+    rating: 4.6,
+    reviewCount: 2,
+    description:
+      "A relaxed wrap shirt cut from washed European linen, with a dropped shoulder and self-tie waist. Designed to soften with every wash.",
+    images: [
+      { url: "https://loremflickr.com/800/1000/linen,shirt?lock=1" },
+      { url: "https://loremflickr.com/800/1000/linen,shirt?lock=2" },
+    ],
+    variants: [
+      { id: "v-001-s-ivory", size: "S", color: "Ivory", priceCents: 8900, inStock: true, quantityAvailable: 6 },
+      { id: "v-001-m-ivory", size: "M", color: "Ivory", priceCents: 8900, inStock: true, quantityAvailable: 4 },
+      { id: "v-001-l-ivory", size: "L", color: "Ivory", priceCents: 8900, inStock: false, quantityAvailable: 0 },
+      { id: "v-001-s-clay", size: "S", color: "Clay", priceCents: 8900, inStock: true, quantityAvailable: 3 },
+      { id: "v-001-m-clay", size: "M", color: "Clay", priceCents: 8900, inStock: true, quantityAvailable: 5 },
+    ],
+    materials: "100% washed European linen",
+    careInstructions: "Machine wash cold, tumble dry low, warm iron if needed",
+    sku: "KYM-TOP-001",
+    reviews: [
+      { id: "r-001-1", rating: 5, comment: "Fits exactly as pictured and the linen is thick, not flimsy at all.", author: "M. Ito" },
+      { id: "r-001-2", rating: 4, comment: "Lovely shirt, runs slightly large so I'd size down.", author: "R. Chen" },
+    ],
+  },
+  {
+    id: "p-002",
+    slug: "sora-wide-leg-trouser",
+    name: "Sora Wide-Leg Trouser",
+    category: { name: "Bottoms", slug: "bottoms" },
+    priceCents: 11200,
+    salePriceCents: 8900,
+    currency: "USD",
+    rating: 4.8,
+    reviewCount: 2,
+    description:
+      "High-rise trousers with a fluid wide leg and interior drawstring waist. Cut from a heavyweight cotton twill that holds its shape without stiffness.",
+    images: [
+      { url: "https://loremflickr.com/800/1000/trousers,fashion?lock=3" },
+      { url: "https://loremflickr.com/800/1000/trousers,fashion?lock=4" },
+    ],
+    variants: [
+      { id: "v-002-xs-ink", size: "XS", color: "Ink", priceCents: 8900, inStock: true, quantityAvailable: 2 },
+      { id: "v-002-s-ink", size: "S", color: "Ink", priceCents: 8900, inStock: true, quantityAvailable: 7 },
+      { id: "v-002-m-ink", size: "M", color: "Ink", priceCents: 8900, inStock: true, quantityAvailable: 7 },
+      { id: "v-002-l-ink", size: "L", color: "Ink", priceCents: 8900, inStock: true, quantityAvailable: 1 },
+      { id: "v-002-s-sand", size: "S", color: "Sand", priceCents: 8900, inStock: true, quantityAvailable: 4 },
+    ],
+    materials: "98% cotton, 2% elastane twill",
+    careInstructions: "Machine wash cold with like colors, hang dry",
+    sku: "KYM-BTM-002",
+    reviews: [
+      { id: "r-002-1", rating: 5, comment: "The drape is incredible and they don't wrinkle after a full day of wear.", author: "A. Novak" },
+      { id: "r-002-2", rating: 5, comment: "Bought these on sale and would happily pay full price next time.", author: "J. Okafor" },
+    ],
+  },
+  {
+    id: "p-003",
+    slug: "yuki-quilted-overshirt",
+    name: "Yuki Quilted Overshirt",
+    category: { name: "Outerwear", slug: "outerwear" },
+    priceCents: 15800,
+    salePriceCents: null,
+    currency: "USD",
+    rating: 4.4,
+    reviewCount: 1,
+    description:
+      "A lightly quilted overshirt in a brushed cotton-blend shell, built as a mid-layer for cooling evenings. Two patch pockets, corozo buttons.",
+    images: [
+      { url: "https://loremflickr.com/800/1000/jacket,overshirt?lock=5" },
+      { url: "https://loremflickr.com/800/1000/jacket,overshirt?lock=6" },
+      { url: "https://loremflickr.com/800/1000/jacket,overshirt?lock=7" },
+    ],
+    variants: [
+      { id: "v-003-m-olive", size: "M", color: "Olive", priceCents: 15800, inStock: true, quantityAvailable: 5 },
+      { id: "v-003-l-olive", size: "L", color: "Olive", priceCents: 15800, inStock: true, quantityAvailable: 3 },
+      { id: "v-003-m-charcoal", size: "M", color: "Charcoal", priceCents: 15800, inStock: false, quantityAvailable: 0 },
+    ],
+    materials: "Shell: 60% cotton, 40% recycled polyester. Fill: recycled polyester wadding",
+    careInstructions: "Dry clean recommended",
+    sku: "KYM-OUT-003",
+    reviews: [
+      { id: "r-003-1", rating: 4, comment: "Great weight for layering, wish it came in one more color.", author: "S. Haddad" },
+    ],
+  },
+  {
+    id: "p-004",
+    slug: "nami-ceramic-tumbler",
+    name: "Nami Ceramic Tumbler",
+    category: { name: "Home", slug: "home" },
+    priceCents: 3400,
+    salePriceCents: null,
+    currency: "USD",
+    rating: 4.9,
+    reviewCount: 2,
+    description:
+      "A hand-glazed stoneware tumbler thrown in small batches, each piece with subtle variation in glaze pooling. Holds 10oz.",
+    images: [
+      { url: "https://loremflickr.com/800/1000/ceramic,mug?lock=8" },
+      { url: "https://loremflickr.com/800/1000/ceramic,mug?lock=9" },
+    ],
+    variants: [
+      { id: "v-004-natural", color: "Natural", priceCents: 3400, inStock: true, quantityAvailable: 14 },
+      { id: "v-004-slate", color: "Slate", priceCents: 3400, inStock: true, quantityAvailable: 9 },
+      { id: "v-004-moss", color: "Moss", priceCents: 3400, inStock: true, quantityAvailable: 2 },
+    ],
+    materials: "Stoneware, food-safe glaze",
+    careInstructions: "Hand wash recommended",
+    sku: "KYM-HOM-004",
+    reviews: [
+      { id: "r-004-1", rating: 5, comment: "Even nicer in person, the glaze catches the light beautifully.", author: "T. Vance" },
+      { id: "r-004-2", rating: 5, comment: "Ordered three as gifts and kept one for myself.", author: "P. Lindgren" },
+    ],
+  },
+  {
+    id: "p-005",
+    slug: "ren-canvas-tote",
+    name: "Ren Canvas Tote",
+    category: { name: "Accessories", slug: "accessories" },
+    priceCents: 5600,
+    salePriceCents: null,
+    currency: "USD",
+    rating: 4.5,
+    reviewCount: 1,
+    description:
+      "A structured tote in waxed canvas with leather handles and an interior zip pocket. Sized to fit a laptop up to 15 inches.",
+    images: [
+      { url: "https://loremflickr.com/800/1000/tote,canvasbag?lock=10" },
+      { url: "https://loremflickr.com/800/1000/tote,canvasbag?lock=11" },
+    ],
+    variants: [
+      { id: "v-005-natural", color: "Natural", priceCents: 5600, inStock: true, quantityAvailable: 11 },
+      { id: "v-005-black", color: "Black", priceCents: 5600, inStock: true, quantityAvailable: 8 },
+    ],
+    materials: "Waxed cotton canvas, vegetable-tanned leather trim",
+    careInstructions: "Spot clean only",
+    sku: "KYM-ACC-005",
+    reviews: [
+      { id: "r-005-1", rating: 4, comment: "Sturdy and holds shape well, the handles are comfortable on the shoulder.", author: "K. Marsh" },
+    ],
+  },
+  {
+    id: "p-006",
+    slug: "mika-rib-knit-vest",
+    name: "Mika Rib-Knit Vest",
+    category: { name: "Tops", slug: "tops" },
+    priceCents: 6800,
+    salePriceCents: 5400,
+    currency: "USD",
+    rating: 4.3,
+    reviewCount: 1,
+    description:
+      "A cropped rib-knit vest with a fitted silhouette, meant to layer over shirting or worn alone. Ribbed at the hem for structure.",
+    images: [
+      { url: "https://loremflickr.com/800/1000/knit,vest?lock=12" },
+      { url: "https://loremflickr.com/800/1000/knit,vest?lock=13" },
+    ],
+    variants: [
+      { id: "v-006-xs-cream", size: "XS", color: "Cream", priceCents: 5400, inStock: true, quantityAvailable: 3 },
+      { id: "v-006-s-cream", size: "S", color: "Cream", priceCents: 5400, inStock: true, quantityAvailable: 6 },
+      { id: "v-006-m-cream", size: "M", color: "Cream", priceCents: 5400, inStock: false, quantityAvailable: 0 },
+      { id: "v-006-s-black", size: "S", color: "Black", priceCents: 5400, inStock: true, quantityAvailable: 4 },
+    ],
+    materials: "70% cotton, 30% recycled polyester",
+    careInstructions: "Hand wash cold, lay flat to dry",
+    sku: "KYM-TOP-006",
+    reviews: [
+      { id: "r-006-1", rating: 4, comment: "Cute layering piece, a bit cropped so check the length before ordering.", author: "D. Osei" },
+    ],
+  },
+  {
+    id: "p-007",
+    slug: "eri-linen-midi-dress",
+    name: "Eri Linen Midi Dress",
+    category: { name: "Dresses", slug: "dresses" },
+    priceCents: 12400,
+    salePriceCents: null,
+    currency: "USD",
+    rating: 4.7,
+    reviewCount: 2,
+    description:
+      "A sleeveless midi dress in textured linen with a square neckline and side seam pockets. Falls just below the knee.",
+    images: [
+      { url: "https://loremflickr.com/800/1000/dress,linen?lock=14" },
+      { url: "https://loremflickr.com/800/1000/dress,linen?lock=15" },
+    ],
+    variants: [
+      { id: "v-007-s-terracotta", size: "S", color: "Terracotta", priceCents: 12400, inStock: true, quantityAvailable: 5 },
+      { id: "v-007-m-terracotta", size: "M", color: "Terracotta", priceCents: 12400, inStock: true, quantityAvailable: 5 },
+      { id: "v-007-l-terracotta", size: "L", color: "Terracotta", priceCents: 12400, inStock: true, quantityAvailable: 2 },
+      { id: "v-007-m-ink", size: "M", color: "Ink", priceCents: 12400, inStock: true, quantityAvailable: 3 },
+    ],
+    materials: "100% linen, lined at bodice",
+    careInstructions: "Dry clean or hand wash cold, hang to dry",
+    sku: "KYM-DRS-007",
+    reviews: [
+      { id: "r-007-1", rating: 5, comment: "Pockets that actually fit a phone, and the linen breathes well in heat.", author: "L. Bergström" },
+      { id: "r-007-2", rating: 4, comment: "True to size, colour is more rust than terracotta in person.", author: "N. Suzuki" },
+    ],
+  },
+  {
+    id: "p-008",
+    slug: "tomo-leather-sandal",
+    name: "Tomo Leather Sandal",
+    category: { name: "Footwear", slug: "footwear" },
+    priceCents: 9800,
+    salePriceCents: null,
+    currency: "USD",
+    rating: 4.2,
+    reviewCount: 1,
+    description:
+      "A minimal slide sandal in vegetable-tanned leather with a molded footbed that shapes to your foot over time.",
+    images: [
+      { url: "https://loremflickr.com/800/1000/sandals,leather?lock=16" },
+      { url: "https://loremflickr.com/800/1000/sandals,leather?lock=17" },
+    ],
+    variants: [
+      { id: "v-008-38-tan", size: "38", color: "Tan", priceCents: 9800, inStock: true, quantityAvailable: 3 },
+      { id: "v-008-39-tan", size: "39", color: "Tan", priceCents: 9800, inStock: true, quantityAvailable: 4 },
+      { id: "v-008-40-tan", size: "40", color: "Tan", priceCents: 9800, inStock: true, quantityAvailable: 1 },
+      { id: "v-008-39-black", size: "39", color: "Black", priceCents: 9800, inStock: false, quantityAvailable: 0 },
+    ],
+    materials: "Vegetable-tanned leather upper, natural rubber sole",
+    careInstructions: "Wipe clean with a damp cloth, condition leather periodically",
+    sku: "KYM-SHO-008",
+    reviews: [
+      { id: "r-008-1", rating: 4, comment: "Needed a short break-in period but very comfortable once worn in.", author: "C. Fontaine" },
+    ],
+  },
+];
+
+export default products;
